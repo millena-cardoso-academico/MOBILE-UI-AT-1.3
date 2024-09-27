@@ -1,0 +1,131 @@
+.galeriaContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.titulo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  color: #ff007f;
+  margin-bottom: 20px;
+}
+
+.controleImagens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.botao {
+  background-color: #ff007f;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background-color: #cc0066;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.imagemContainer {
+  position: relative;
+}
+
+.imagem {
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #ccc;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.botaoAdicionar {
+  background-color: #ff007f;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.botaoAdicionar:hover {
+  background-color: #cc0066;
+}
+
+.botaoEnviar {
+  background-color: #ff007f;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.botaoEnviar:hover {
+  background-color: #cc0066;
+}
+
+.botaoRemover {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.botaoRemover:hover {
+  background-color: darkred;
+}
+
+/* Media Query para telas grandes */
+@media (min-width: 768px) {
+  .titulo {
+    font-size: 2.5rem;
+  }
+
+  .botao {
+    padding: 10px;
+    margin: 0 10px;
+  }
+
+  .botaoAdicionar,
+  .botaoEnviar {
+    padding: 10px 20px;
+  }
+
+  .galeria {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .imagem {
+    width: 200px;
+    height: 150px;
+  }
+}

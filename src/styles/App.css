@@ -1,0 +1,27 @@
+.header {
+  position: relative;
+}
+
+.icone-modo-escuro {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.App {
+  transition: background-color 0.3s ease;
+  min-height: 100vh;
+}
+
+.App.claro {
+  background: linear-gradient(to right, #f3e5f5, #e1bee7, #ffccbc);
+}
+
+.App.escuro {
+  background-color: #121212;
+  color: #f4f4f4;
+}
